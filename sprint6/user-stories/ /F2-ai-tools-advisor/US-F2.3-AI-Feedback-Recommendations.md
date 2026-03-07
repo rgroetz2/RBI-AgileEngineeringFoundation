@@ -1,5 +1,7 @@
 # US-F2.3-Feedback-AI-Recommendations
-As a customer, I want to give feedback on AI recommendations so the system improves.
+As a customer, 
+I want to give feedback on AI recommendations 
+so the system improves.
 
 # ACC
 - Thumbs up/down feedback button for each recommendation

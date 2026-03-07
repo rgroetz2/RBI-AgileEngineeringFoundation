@@ -1,5 +1,7 @@
 # US-F2.4-Use-AI-In-My-Language
-As an international customer, I want to use the AI in my language so I understand recommendations fully.
+As an international customer, 
+I want to use the AI in my language 
+so I understand recommendations fully.
 
 # ACC
 - Auto-detect user language from browser settings

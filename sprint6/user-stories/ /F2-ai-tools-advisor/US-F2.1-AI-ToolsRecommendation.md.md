@@ -1,5 +1,8 @@
 # US-F2.1-AIToolsRecommendation
- As a customer, I want an AI assistant to recommend tools for my project so I find the optimal solution.
+As a customer, 
+I want an AI assistant to recommend tools for my project 
+so I find the optimal solution.
+
 
 # Accepatnce Criteria
 - Chat-style interface for user to describe project
