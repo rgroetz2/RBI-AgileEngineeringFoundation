@@ -11,7 +11,7 @@ Amid the chaos, a glimmer of hope emerged. A glamor investor recognized the proj
 
 And now a new chapter begins. The new team, called “Seal-Team-42”, will be equipped with a common goal: to conquer the Chinese market with the new e-commerce platform “Roy's-Roy's”.
 
-Equipped with nothing other than the GitHub repository and the Alpenhost cloud infrastructure left behind by TechGenius Inc., the team will embark on a journey full of challenges, collaboration and the promise of success.
+Equipped with nothing other than the GitHub repository, the team will embark on a journey full of challenges, collaboration and the promise of success.
 
 And so, with determination in their hearts and Agile principles as their guide, Seal Team 42 will be ready to write history.
 
