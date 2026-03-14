@@ -3,13 +3,14 @@
 ## Sprint 6.ZERO (10:00-13:00)
 - ToolShop is running local on each team members workstation
 - Playwright is installed on each team members workstation
+- Team Members know their main responsibility (PO, BA, DEV, TE)
 - ToolShop is available with new chinese logo
 - Feature List is available 
 - Physical Scrum Board is available and ready for sprint 6.1
-- All UI-Defect on Homepage are fixed
-- EGS-Tested (E1.1, E1.2)
-- EGS-Implemented (E1.4, E.2.1)
-- Team Members know their main responsibility (PO, BA, DEV, TE)
+- All UI-Defect on Homepage are fixed and accepted by PO
+- EGS (E1.1, E1.2) Accepted by PO 
+- EGS (E1.4, E.2.1) Accepted by PO
+
 
 ## Sprint 6.1 (13:45-15:00)
 - Regression Tests for login and registration are implemented
