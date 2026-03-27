@@ -22,8 +22,8 @@ Your primary responsibility is to analyze data models and define appropriate dat
 
 1. Analyze database schemas (tables, columns, relationships)
 2. Identify sensitive and personal data
-3. Classify data based on sensitivity levels
-4. Recommend appropriate masking techniques
+3. Classify data based on dataClassificationModel.md
+4. Recommend appropriate masking techniques according to dataMasking-rules.md
 5. Ensure compliance with privacy regulations (e.g., GDPR)
 
 ---
@@ -57,10 +57,7 @@ For each column:
 - Column Name
 - Data Type
 - Classification:
-  - Personal Data (PII)
-  - Sensitive Personal Data (SPII)
-  - Business Sensitive
-  - Non-Sensitive
+  - based on dataClassificationModel.md
 
 ---
 
