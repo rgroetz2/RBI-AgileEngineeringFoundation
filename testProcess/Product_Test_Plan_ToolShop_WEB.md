@@ -41,25 +41,60 @@ The main objectives of this test plan are:
 
 ### 3.1 In Scope
 
+The test scope is derived from the defined use cases and focuses on business-critical (**MUST**) and supporting (**SHOULD**) functionalities.
+
 The following use cases are covered by this test plan:
 
-#### MUST (business-critical core functionalities required for the main e-commerce workflow):
+### MUST  
+*(business-critical core functionalities required for the main e-commerce workflow)*
 
-- User registration  
-- User login  
-- Shopping cart management  
-- Checkout process  
-- Currency and tax handling  
-- Sustainability-related use cases in the web frontend  
+- User authentication (login, registration, password management)  
+- Checkout process (cart, payment, address handling)  
+- Customer account management  
+- Product catalog (product overview, detail, category)  
 
 These use cases are considered business-critical as they are essential for completing a purchase.
 
-#### SHOULD (supporting and non-critical functionalities)
+---
 
-- Product search  
-- Product catalog (display of products)  
-- Product availability (e.g. stock status)  
-- Additional use cases according to the product backlog  
+### SHOULD  
+*(supporting and non-critical functionalities)*
+
+- Product search and filtering  
+- Contact forms (basic and advanced)  
+- Discounts and pricing features  
+- Analytics and tracking  
+- Multi-language support
+- Accessibility features (e.g. keyboard navigation, screen reader support)  
+- Legal information (privacy policy)  
+- Additional supporting features from the product backlog  
+
+---
+
+The classification of business-critical (**MUST**) and supporting (**SHOULD**) use cases is based on the project requirements and scope definition.
+
+A detailed mapping of all relevant features is provided in the **Feature Classification Table** below.
+
+---
+
+## Feature Classification Table
+
+| Feature           | Description                                                                 | Business Critical (YES/NO) |
+|------------------|-----------------------------------------------------------------------------|---------------------------|
+| Admin Account    | CRUD, Reporting                                                             | NO                        |
+| Authentication   | Login, Register, Forgot Password, Lock account after failed attempts, Social Login, Two-Factor Authentication | YES |
+| Chat Widget      | Chat support                                                                | NO                        |
+| Checkout Flow    | Increase/decrease quantity, Delete item, Address details, Payment options (basic & advanced) | YES |
+| Contact Form     | Basic and advanced contact form, including file upload                      | NO                        |
+| Customer Account | Update profile, change password, invoice overview, invoice details (including PDF), favorites, contact messages | YES |
+| Discount         | Pricing, promotions                                                         | NO                        |
+| Google Analytics | User tracking                                                               | NO                        |
+| Multi-Language   | Language support                                                            | NO                        |
+| Privacy Policy   | Legal information                                                           | NO                        |
+| Product Catalog  | Product overview, detail, category, including ESG-related information (e.g. CO2 rating, sustainability badges)                                          | YES                       |
+| Search & Filter  | Search, sorting, filtering                                                  | NO                        |
+| Rentals          | Rental functionality                                                        | NO                        |
+| Accessibility    | Accessible UI, keyboard navigation, screen reader support, contrast and usability improvements   | NO |
 
 ---
 
