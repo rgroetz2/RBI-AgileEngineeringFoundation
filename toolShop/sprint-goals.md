@@ -6,7 +6,6 @@
   - Playwright is installed on each team members workstation
 - Organizational
   - Team Members know their main responsibility (PO, BA, DEV, TE)
-  - Feature List is available 
   - Physical Scrum Board is available and ready for sprint 6.1
   - Sprint Backlog 6.1 is ready
 - Implementation
