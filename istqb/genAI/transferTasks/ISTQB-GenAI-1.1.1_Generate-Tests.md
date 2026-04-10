@@ -17,7 +17,7 @@ Use generative AI to create valuable and reusable test cases for the Cart and Ch
 
 ### Part 1 – Understand the Test Basis (5 min)
 1. Open the ToolShop application
-2. Perform the following actions:
+2. Perform the following actions:      
    - Add a product to the cart
    - Navigate to the checkout
 
