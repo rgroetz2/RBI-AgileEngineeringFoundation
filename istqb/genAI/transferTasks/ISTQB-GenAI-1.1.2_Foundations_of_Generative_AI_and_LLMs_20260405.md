@@ -34,7 +34,26 @@ Your team uses AI outputs but often treats them as facts. You need a short learn
 ### 6. Expected Outcome / Deliverable
 A markdown note with one short process description and a practical control checklist.
 
----
+Process Description
+
+Das Large Language Model (LLM) verarbeitet den Prompt schrittweise.
+Zuerst wird der Text in Tokens zerlegt (Tokenization). Diese Tokens werden innerhalb eines begrenzten Kontextfensters verarbeitet, das bestimmt, wie viele Informationen gleichzeitig berücksichtigt werden können.
+
+Die Ausgabe entsteht durch Next-token Prediction, wobei das Modell jeweils das wahrscheinlichste nächste Wort basierend auf gelernten Mustern auswählt.
+
+Da mehrere mögliche Token-Sequenzen ähnliche Wahrscheinlichkeiten haben, ist der Prozess nicht deterministisch und kann unterschiedliche Ergebnisse erzeugen.
+
+Das Modell kann außerdem sogenannte Halluzinationen erzeugen, bei denen Inhalte plausibel wirken, aber faktisch falsch oder nicht überprüft sind.
+
+Consequences for Testers
+KI-generierte Testfälle können logisch wirken, aber Fehler enthalten.
+Wichtige Randfälle können fehlen oder falsch abgedeckt sein.
+Ergebnisse dürfen nicht ungeprüft übernommen werden und müssen validiert werden.
+
+Quality Control Checklist
+KI-generierte Testfälle immer gegen Anforderungen und Business Rules prüfen
+Kritische Szenarien (Boundary, Negative Cases) manuell validieren
+
 
 ### 7. Timebox
 60 minutes
