@@ -1,4 +1,4 @@
-\# Scrum Test Automation Activity Map
+# Scrum Test Automation Activity Map
 
 \#\# User Journeys  
 \- Journey 1: Login to account  
