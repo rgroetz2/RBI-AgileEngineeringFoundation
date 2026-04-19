@@ -1,0 +1,118 @@
+# generated: 2026-04-19T20:24:18Z
+# last_updated: 2026-04-19T21:35:00Z
+# project: practice-software-testing
+# project_key: NOKEY
+# tracking_system: file-system
+# story_location: _bmad-output/implementation-artifacts
+#
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Epic Status Transitions:
+#   - backlog → in-progress: Automatically when first story is created (via create-story)
+#   - in-progress → done: Manually when all stories reach 'done' status
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review (via Dev's code-review workflow)
+#   - done: Story completed
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+#
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when first story is created
+# - Stories can be worked in parallel if team capacity allows
+# - Developer typically creates next story after previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+
+generated: "2026-04-19T20:24:18Z"
+last_updated: "2026-04-19T21:35:00Z"
+project: practice-software-testing
+project_key: NOKEY
+tracking_system: file-system
+story_location: _bmad-output/implementation-artifacts
+
+development_status:
+  epic-1: in-progress
+  1-1-storefront-entry-and-dual-rail-navigation-for-guided-discovery: review
+  1-2-task-prompt-bar-and-contextual-chips: backlog
+  1-3-journey-identifier-and-recommendation-session-api: backlog
+  1-4-ranked-recommendations-with-cold-start-behavior: backlog
+  1-5-alternative-recommendations-and-refine-loop: backlog
+  1-6-fallback-to-classic-discovery-without-session-loss: backlog
+  epic-1-retrospective: optional
+
+  epic-2: backlog
+  2-1-rationale-confidence-and-source-metadata-on-recommendations: backlog
+  2-2-explainability-accordion-and-ai-disclosure-surfaces: backlog
+  2-3-explicit-and-implicit-feedback-capture: backlog
+  2-4-consent-and-instrumentation-shell-client-server: backlog
+  2-5-data-subject-deletion-and-minimization-for-recommendation-data: backlog
+  2-6-design-tokens-and-ai-accent-theme: backlog
+  epic-2-retrospective: optional
+
+  epic-3: backlog
+  3-1-compact-compare-tray-2-3-skus: backlog
+  3-2-suitability-and-compatibility-information: backlog
+  3-3-stock-and-availability-on-recommendation-surfaces: backlog
+  3-4-add-to-cart-and-adjust-selection-from-guided-surfaces: backlog
+  epic-3-retrospective: optional
+
+  epic-4: backlog
+  4-1-journey-propagation-through-checkout-requests: backlog
+  4-2-conversion-attribution-to-recommendation-context: backlog
+  4-3-standard-checkout-completion-after-guided-selection: backlog
+  epic-4-retrospective: optional
+
+  epic-5: backlog
+  5-1-versioned-rest-contract-and-openapi-for-recommendations: backlog
+  5-2-authenticated-access-for-integration-consumers: backlog
+  5-3-telemetry-ingestion-with-idempotency-and-governance: backlog
+  5-4-usage-quotas-and-abuse-protection: backlog
+  epic-5-retrospective: optional
+
+  epic-6: backlog
+  6-1-recommendation-event-schema-and-writer: backlog
+  6-2-funnel-and-journey-comparison-dashboards: backlog
+  6-3-segment-and-source-confidence-breakdowns: backlog
+  epic-6-retrospective: optional
+
+  epic-7: backlog
+  7-1-baseline-recommendation-rules-configuration: backlog
+  7-2-product-boost-demote-include-exclude-lists: backlog
+  7-3-staged-logic-changes-and-controlled-exposure: backlog
+  7-4-revert-and-negative-impact-safeguards: backlog
+  7-5-kpi-monitoring-and-experiment-outcome-review: backlog
+  epic-7-retrospective: optional
+
+  epic-8: backlog
+  8-1-experiment-definition-and-lifecycle: backlog
+  8-2-sticky-variant-assignment-per-session: backlog
+  8-3-outcome-measurement-by-variant: backlog
+  8-4-phased-rollout-decision-gates: backlog
+  epic-8-retrospective: optional
+
+  epic-9: backlog
+  9-1-session-interaction-history-api: backlog
+  9-2-support-console-session-viewer-ui: backlog
+  9-3-issue-classification-and-escalation-with-evidence: backlog
+  9-4-operations-diagnostic-signals-for-incidents: backlog
+  epic-9-retrospective: optional
+
+  epic-10: backlog
+  10-1-retention-and-deletion-jobs-for-telemetry-classes: backlog
+  10-2-logical-separation-of-pii-and-analytics-processing: backlog
+  10-3-auditor-facing-audit-evidence-export: backlog
+  10-4-recommendation-graceful-degradation-modes: backlog
+  10-5-post-incident-analysis-evidence-package: backlog
+  10-6-bias-and-trust-risk-review-workflow: backlog
+  epic-10-retrospective: optional
