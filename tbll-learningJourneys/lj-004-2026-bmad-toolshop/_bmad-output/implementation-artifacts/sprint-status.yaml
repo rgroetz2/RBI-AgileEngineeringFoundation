@@ -35,7 +35,7 @@
 # - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
 
 generated: "2026-04-19T20:24:18Z"
-last_updated: "2026-04-19T21:35:00Z"
+last_updated: "2026-04-20T19:08:00Z"
 project: practice-software-testing
 project_key: NOKEY
 tracking_system: file-system
@@ -44,33 +44,33 @@ story_location: _bmad-output/implementation-artifacts
 development_status:
   epic-1: in-progress
   1-1-storefront-entry-and-dual-rail-navigation-for-guided-discovery: review
-  1-2-task-prompt-bar-and-contextual-chips: backlog
-  1-3-journey-identifier-and-recommendation-session-api: backlog
-  1-4-ranked-recommendations-with-cold-start-behavior: backlog
-  1-5-alternative-recommendations-and-refine-loop: backlog
-  1-6-fallback-to-classic-discovery-without-session-loss: backlog
+  1-2-task-prompt-bar-and-contextual-chips: review
+  1-3-journey-identifier-and-recommendation-session-api: review
+  1-4-ranked-recommendations-with-cold-start-behavior: review
+  1-5-alternative-recommendations-and-refine-loop: review
+  1-6-fallback-to-classic-discovery-without-session-loss: review
   epic-1-retrospective: optional
 
-  epic-2: backlog
-  2-1-rationale-confidence-and-source-metadata-on-recommendations: backlog
-  2-2-explainability-accordion-and-ai-disclosure-surfaces: backlog
-  2-3-explicit-and-implicit-feedback-capture: backlog
-  2-4-consent-and-instrumentation-shell-client-server: backlog
-  2-5-data-subject-deletion-and-minimization-for-recommendation-data: backlog
-  2-6-design-tokens-and-ai-accent-theme: backlog
+  epic-2: in-progress
+  2-1-rationale-confidence-and-source-metadata-on-recommendations: review
+  2-2-explainability-accordion-and-ai-disclosure-surfaces: review
+  2-3-explicit-and-implicit-feedback-capture: review
+  2-4-consent-and-instrumentation-shell-client-server: review
+  2-5-data-subject-deletion-and-minimization-for-recommendation-data: review
+  2-6-design-tokens-and-ai-accent-theme: review
   epic-2-retrospective: optional
 
-  epic-3: backlog
-  3-1-compact-compare-tray-2-3-skus: backlog
-  3-2-suitability-and-compatibility-information: backlog
-  3-3-stock-and-availability-on-recommendation-surfaces: backlog
-  3-4-add-to-cart-and-adjust-selection-from-guided-surfaces: backlog
+  epic-3: in-progress
+  3-1-compact-compare-tray-2-3-skus: review
+  3-2-suitability-and-compatibility-information: review
+  3-3-stock-and-availability-on-recommendation-surfaces: review
+  3-4-add-to-cart-and-adjust-selection-from-guided-surfaces: review
   epic-3-retrospective: optional
 
-  epic-4: backlog
-  4-1-journey-propagation-through-checkout-requests: backlog
-  4-2-conversion-attribution-to-recommendation-context: backlog
-  4-3-standard-checkout-completion-after-guided-selection: backlog
+  epic-4: in-progress
+  4-1-journey-propagation-through-checkout-requests: review
+  4-2-conversion-attribution-to-recommendation-context: review
+  4-3-standard-checkout-completion-after-guided-selection: ready-for-dev
   epic-4-retrospective: optional
 
   epic-5: backlog
