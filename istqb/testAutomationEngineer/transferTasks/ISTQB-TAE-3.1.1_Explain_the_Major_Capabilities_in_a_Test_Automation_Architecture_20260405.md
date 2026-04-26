@@ -20,8 +20,8 @@ The team has scripts but no explicit architecture, causing duplication and incon
 
 ### 5. Task Instructions
 1. Define capability blocks: Test Case Design, Test Data Management, Execution Engine, Assertions, Reporting, Logging, Environment Configuration, CI Integration...
-2. For each block, write one Toolshop-specific requirement.
-3. Map one concrete example flow (login + add-to-cart) across all capability blocks.
+2. For each block, write one Toolshop-specific requirement, tool to support this block, how GenAI can support this block.
+3. Map one concrete example flow for first time customer(registration + login + add-to-cart + cheackout) across all capability blocks.
 4. Identify the two capability gaps with highest delivery risk.
 5. Suggest one improvement per gap.
 
