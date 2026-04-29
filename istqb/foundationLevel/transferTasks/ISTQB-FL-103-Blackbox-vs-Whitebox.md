@@ -148,19 +148,31 @@ else:
     print("Not OK")
 
 
-    # 🔄 Comparison at a Glance (Detailed)
+    ## Example
+
+```python
+if (x > 10):
+    print("OK")
+else:
+    print("Not OK")
+```
+
+Test cases:
+- `x = 11` → true branch
+- `x = 5` → false branch
+
+---
+
+## 🔄 Comparison at a Glance
 
 | Aspect | Black-Box | White-Box | Experience-Based |
-|--------|----------|----------|------------------|
-| **Based on** | Requirements / Specifications | Code / Structure | Knowledge / Experience |
-| **Focus** | What the system does | How the system works | Where defects are likely |
-| **Knowledge of Code** | Not required | Required | Not required |
-| **Main Goal** | Validate functionality | Verify logic & coverage | Find unexpected defects |
-| **Strength** | - User perspective  
-- Implementation independent | - Measures coverage  
-- Ensures all paths tested | - Detects hidden / hard-to-find issues |
-| **Best Used** | Functional & acceptance testing | Unit testing, code-level testing | Exploratory, ad-hoc, risk areas |
-
+|--------|-----------|-----------|------------------|
+| Based on | Requirements / Specifications | Code / Structure | Knowledge / Experience |
+| Focus | What the system does | How the system works | Where defects are likely |
+| Knowledge of Code | Not required | Required | Not required |
+| Main Goal | Validate functionality | Verify logic & coverage | Find unexpected defects |
+| Strength | User perspective, implementation independent | Measures coverage, ensures paths are tested | Detects hidden / hard-to-find issues |
+| Best Used | Functional & acceptance testing | Unit testing, code-level testing | Exploratory, ad-hoc, risk areas |
 ---
 
 # 📍 When to Use (Expanded)
