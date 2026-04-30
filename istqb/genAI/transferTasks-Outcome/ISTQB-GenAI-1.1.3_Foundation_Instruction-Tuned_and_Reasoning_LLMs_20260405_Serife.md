@@ -56,12 +56,20 @@ A decision matrix and 3 clear model-selection rules.
 | Reasoning         | **Hoch**  | Mittel     | **Hoch**      | **Hoch** |
 
 
+## LLM-Auswahl für QA-Aufgaben
+
+| Aufgabe                         | Regel / Entscheidung |
+|--------------------------------|----------------------|
+| Anforderungszusammenfassung    | Wenn Anforderungen strukturiert zusammengefasst werden sollen → **Instruction-Tuned LLM verwenden** |
+| Testfallgenerierung (Standard) | Wenn Testfälle aus Anforderungen erstellt werden → **Instruction-Tuned LLM verwenden** |
+| Testfallgenerierung (komplex)  | Wenn Szenario komplex ist → **Reasoning LLM verwenden** |
+| Ursachenanalyse von Fehlern    | Wenn Ursache eines Fehlers analysiert werden soll → **Reasoning LLM verpflichtend verwenden** |
+
 🔹 LLM Auswahl für QA Aufgaben
 
 Anforderungszusammenfassung → Instruction-Tuned LLM → Beispiel: ChatGPT  
 Testfallgenerierung → Instruction-Tuned LLM → Beispiel: ChatGPT  
-Ursachenanalyse von Fehlern → Reasoning LLM → Beispiel: ChatGPT (Advanced Reasoning) / Ollama (lokale Modelle) 
- 
+Ursachenanalyse von Fehlern → Reasoning LLM → Beispiel: ChatGPT (Advanced Reasoning) / Ollama (lokale Modelle)
 ## Governance
 
 - Verwende **immer das einfachste geeignete Modell**
