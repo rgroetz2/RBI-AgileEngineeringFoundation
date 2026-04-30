@@ -29,7 +29,7 @@ The team wants to start with test automation and needs a test automation strateg
 ---
 
 ### 6. Expected Outcome / Deliverable
-Test Automation strategy as md-file with all chapters from test-automation-strategy-template.md showing architecture blocks (according to the Generic Test Automation Architecture), Toolshop-specific needs, and other sections.
+Test Automation strategy as md-file with all chapters from testAutomation-strategy-template.md showing architecture blocks (according to the Generic Test Automation Architecture), Toolshop-specific needs, and other sections.
 
 ---
 
