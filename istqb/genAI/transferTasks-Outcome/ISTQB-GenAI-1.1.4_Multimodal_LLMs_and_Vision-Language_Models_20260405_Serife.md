@@ -58,7 +58,7 @@ Ein strukturierter Markdown-Bericht, der folgende Elemente enthält:
 - eine konsistente Dokumentation der Belege (sichtbare UI-Elemente aus den Screenshots)  
 - Notizen zur Verbesserung des Prompts zur Reduktion von False Positives und unklaren Ergebnissen  
 ### 7. Timebox
-50 minutes
+ 50 minutes
 ### 8. Hints (Optional)
 - Ask for explicit evidence (“which element, where on screen, why issue”).
 - Keep manual validation mandatory.
