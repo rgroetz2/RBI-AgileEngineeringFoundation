@@ -161,7 +161,7 @@ Characteristics:
 
 Example:
 
-T5_login_validUserWithLockedIdCard_userGetErrormessageAndIsNotLoggedIN
+T5_login_withSQLInjection-userGetsErrormessage
 
 ------------------------------------------------------------------------
 
