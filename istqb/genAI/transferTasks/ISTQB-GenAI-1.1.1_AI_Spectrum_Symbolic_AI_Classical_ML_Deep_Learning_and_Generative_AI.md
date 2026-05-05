@@ -38,7 +38,25 @@ During sprint planning, your team wants to use AI support in Toolshop testing bu
 
 ### Final Decision
 
-...
+
+| Paradigm      | Toolshop testing use case                                | Main strength                                      | Caution/risk                    |
+|---------------|----------------------------------------------------------|----------------------------------------------------|---------------------------------|
+| Symbolic AI   | Validating search results based on rules (e.g., “drill” returns relevant products, filters work correctly) |Clear rule-based and consistent output |Cannot understand complex search (intent) |
+| Classical ML  | Analyzing search history and click data to identify popular products and trends|Learns patterns from data and supports prioritization |May produce incorrect insights with insufficient data |
+| Deep Learning | Understanding semantic meaning of search queries to improve relevance of results|Can capture semantic relationships between query and products |Hard to explain how results are generated |
+| Generative AI | Generating search test cases (e.g., typos, empty search, long queries), test data, and edge cases|Fast and broad test case generation |May produce irrelevant or incorrect test cases without review |
+
+I would use Generative AI first for requirement-to-test-case generation because it can quickly produce initial test cases from requirements, helping to speed up test design and provide a strong starting point for refinement.
+
+Search process:
+
+Symbolic AI → “Do the search results match the rules?” - rule checking
+
+ML → “This search query is often high-risk or frequently fails” - data analysis and prediction
+
+Deep Learning → “The user intent behind this query is unclear or unusual” - complex pattern detection
+
+GenAI → “Let me generate test cases for this search flow” - content generation (e.g., writing tests)
 
 ---
 
