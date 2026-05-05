@@ -76,7 +76,6 @@ T5                      Misuse Case             Deliberate misuse or
 manipulation attempts
 to test system
 robustness.
-  -----------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 
