@@ -18,8 +18,9 @@ Participants learn how to:
 
 You are part of a product team preparing the next sprint.
 
-Six upcoming user stories are planned for implementation. Due to
-limited testing capacity, not all stories can receive the same testing
+8 upcoming user stories are planned for implementation (details you can find here: https://github.com/rgroetz2/RBI-AgileEngineeringFoundation/blob/main/courses/GO-IT-Academy/HolisticTestingWithGenAI-BA-Bootcamp-20260519/sprint6/sprint6-input/sprint6-content.md). 
+
+Due to limited testing capacity, not all stories can receive the same testing
 focus.
 
 Your task is to use `(RBI)(Chat)_GPT` and different GenAI models to:
@@ -34,7 +35,7 @@ Your task is to use `(RBI)(Chat)_GPT` and different GenAI models to:
 
 ## Part 1 - Analyze the User Stories
 
-Review the six provided user stories.
+Review the provided user stories.
 
 Consider:
 - Business impact
@@ -59,11 +60,11 @@ Prioritize the stories using:
   - Important
   - Test if time allows
 
-- COULD (1)
+- COULD (2)
   - Nice to have
   - Optional coverage
 
-- WON’T (2)
+- WON’T (3)
   - Out of scope
   - Not worth testing this sprint
 
@@ -105,14 +106,6 @@ Analyze:
 - Consider production impact
 - Think exploratory
 - Challenge the AI-generated results critically
-
----
-
-# Timebox
-
-45-60 minutes
-
----
 
 # Learning Goals
 

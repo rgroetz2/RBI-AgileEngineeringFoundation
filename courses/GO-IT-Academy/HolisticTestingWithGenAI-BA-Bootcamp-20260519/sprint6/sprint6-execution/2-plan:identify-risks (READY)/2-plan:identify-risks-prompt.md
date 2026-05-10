@@ -10,14 +10,14 @@ sprint.
 
 # Background
 
-Six user stories are planned for release.
+8 user stories are planned for release.
+
+Details you can find here: https://github.com/rgroetz2/RBI-AgileEngineeringFoundation/blob/main/courses/GO-IT-Academy/HolisticTestingWithGenAI-BA-Bootcamp-20260519/sprint6/sprint6-input/sprint6-content.md
 
 You are expected to evaluate them based on risk exposure by
 considering:
 - Impact
   - How severe a failure would be
-- Likelihood
-  - How probable the failure is to occur
 
 Follow the guiding principle:
 
@@ -40,11 +40,11 @@ each category:
 
 - COULD
   - Nice to have if time allows
-  - Select 1 story
+  - Select 2 story
 
 - WON’T
   - Out of testing scope for this sprint
-  - Select 2 stories
+  - Select 3 stories
 
 ---
 
@@ -59,6 +59,8 @@ Explain:
 - Why the story received its priority
 - Which risks influenced the decision
 - Which business or technical impact was considered
+
+Create the outcome in table format in mark down format.
 
 ---
 

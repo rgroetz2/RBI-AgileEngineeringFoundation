@@ -19,6 +19,7 @@ In parallel, improve the security foundation of the webshop by implementing secu
 ## User Stories
 - US2300-Czech Language Support 
 - US2350-Provide Product Articles in Czech Language
+- US2450-delivery-cost
 - US3100-Add PayU Payment Support for Czech Customers
 - US3206-MD5 Hashed password
 - US3409-Fix vulnerability in "Auth-X32"
