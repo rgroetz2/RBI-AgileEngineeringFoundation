@@ -52,7 +52,7 @@ practice.
 
 --------------------------------------------------------------------------------------------------
 ID                      Scenario Type           Description
------------------------ ----------------------- --------------------------------------------------
+------------------------------------------------------------------------------------------------
 T1                      Standard Case           The main workflow that achieves the desired goal. Often called the Happy Path.
 
 T2                      Alternative Case        A different valid way to achieve the same goal as the standard case.
@@ -79,7 +79,7 @@ Characteristics:
 
 Example:
 
-T1_login_validUserWithCorrectPassword_userIsLoggedInAndGetsToken
+T1_login_withValidCredentials_userIsLoggedInAndGetsToken
 
 ------------------------------------------------------------------------
 
@@ -96,7 +96,7 @@ Characteristics:
 
 Example:
 
-T2_login_validUserWithValidIdCard_userIsLoggedInAndGetsToken
+T2_login_withValidGoogleAccount_userIsLoggedInAndGetsToken
 
 ------------------------------------------------------------------------
 
@@ -112,14 +112,14 @@ Characteristics:
 
 Example:
 
-T3_login_validUserWithNotReadableIdCard_userGetErrormessageAndIsNotLoggedIN
+T3_login_validUser_corrected_TypoInPassword_userGetErrormessageAndIsNotLoggedIN
 
 ------------------------------------------------------------------------
 
 ### T4 --- Negative Case
 
 The negative case verifies that the system correctly rejects invalid
-inputs.
+inputs or not applicable features
 
 Characteristics:
 
@@ -129,7 +129,7 @@ Characteristics:
 
 Example:
 
-T4_login_validUserWithWrongPassword_userGetErrormessageAndIsNotLoggedIN
+T4_login_lockedUser_userGetErrormessageAndIsNotLoggedIN
 
 ------------------------------------------------------------------------
 
@@ -197,23 +197,6 @@ Test names should be written as clear declarative statements describing
 workflows and outcomes.
 
 Tests should serve as documentation of system behavior.
-
-------------------------------------------------------------------------
-
-## Example Scenario: Login Feature
-
-Feature:
-
-A user with valid credentials (username and password) can log in to the
-application.
-
-Example test scenarios:
-
-T1_login_validUserWithCorrectPassword_userIsLoggedInAndGetsToken\
-T2_login_validUserWithValidIdCard_userIsLoggedInAndGetsToken\
-T3_login_validUserWithNotReadableIdCard_userGetErrormessageAndIsNotLoggedIN\
-T4_login_validUserWithWrongPassword_userGetErrormessageAndIsNotLoggedIN\
-T5_login_validUserWithLockedIdCard_userGetErrormessageAndIsNotLoggedIN
 
 ------------------------------------------------------------------------
 

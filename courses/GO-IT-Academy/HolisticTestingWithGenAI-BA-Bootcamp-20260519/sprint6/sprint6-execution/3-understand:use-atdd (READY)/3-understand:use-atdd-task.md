@@ -22,16 +22,6 @@ Your goal is to identify and document:
 
 Create a structured overview of the discovered functionality.
 
-### Examples
-- Login
-- Registration
-- Search
-- Shopping cart
-- Checkout
-- User profile management
-- Product filtering
-
----
 
 ## Part 2 - Select a Use Case
 
@@ -39,10 +29,7 @@ Choose one realistic use-case that uses one or more identified
 features/functions.
 
 ### Example Use-Cases
-- Customer purchases a product
-- User resets password
-- Customer searches and filters products
-- User updates profile data
+- Customer registers for a new account
 
 ---
 

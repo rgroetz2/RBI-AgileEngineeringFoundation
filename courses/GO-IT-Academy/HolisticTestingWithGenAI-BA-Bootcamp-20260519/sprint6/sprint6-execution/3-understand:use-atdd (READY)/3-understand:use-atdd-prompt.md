@@ -38,12 +38,11 @@ Examples:
 
 ## Part 2 - Select a Use Case
 
-Choose one realistic business-critical use-case that uses multiple
-features/functions.
+Choose one realistic business-critical use-case that uses multiple features/functions.
 
 ## Part 3 - Create T1&T5 Test Titles
 
-Based on the selected use-case, create a structured T1&T5 test set for one dedicated use-case.
+For the selected use-case, create a structured T1&T5 test set (one T1, one T2, one T3, one T4, one T5) in mark down format.
 
 Important:
 - Create ONLY test titles according to the T1T5 title syntax
