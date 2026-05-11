@@ -121,8 +121,137 @@ Das ausgewählte Produkt wird im Warenkorb mit korrektem Produktnamen, Preis, Me
 2. Überprüfen Sie die Ausgabe
 3. Wählen Sie mindestens 5 nützliche Testfälle aus
 
+# Shopping Cart Test Cases
 
+---
 
+## TC_102 – T1_Cart_UpdateProductQuantity_TotalUpdatedCorrectly
+
+**Test-ID:** TC_102
+
+### Vorbedingungen
+- Ein Produkt befindet sich im Warenkorb.
+
+### Testschritte
+1. Warenkorb öffnen.
+2. Die Produktmenge von 1 auf 2 erhöhen.
+3. Aktualisierung prüfen.
+
+### Erwartetes Ergebnis
+- Die Menge wird auf 2 gesetzt.
+- Die Zwischensumme und Gesamtsumme werden korrekt neu berechnet.
+
+---
+
+## TC_112 – T4_Cart_SetQuantityToZero_ValidationErrorDisplayed
+
+**Test-ID:** TC_112
+
+### Vorbedingungen
+- Ein Produkt befindet sich im Warenkorb.
+
+### Testschritte
+1. Warenkorb öffnen.
+2. Produktmenge auf 0 setzen.
+3. Änderung speichern oder Eingabefeld verlassen.
+
+### Erwartetes Ergebnis
+- Menge 0 wird nicht als gültige Bestellmenge akzeptiert.
+- Eine Validierungsmeldung wird angezeigt oder das Produkt wird bewusst aus dem Warenkorb entfernt.
+
+---
+
+# Checkout Test Cases
+
+---
+
+## TC_103 – T1_Checkout_ValidCustomerData_OrderCompletedSuccessfully
+
+**Test-ID:** TC_103
+
+### Vorbedingungen
+- Benutzer ist eingeloggt.
+- Warenkorb enthält mindestens ein Produkt.
+
+### Testschritte
+1. Warenkorb öffnen.
+2. Checkout starten.
+3. Adressdaten prüfen oder gültig ausfüllen.
+4. Versandart auswählen.
+5. Zahlungsart auswählen.
+6. Bestellung bestätigen.
+
+### Erwartetes Ergebnis
+- Die Bestellung wird erfolgreich abgeschlossen.
+- Eine Bestellbestätigung wird angezeigt.
+- Der Warenkorb ist leer.
+
+---
+
+## TC_110 – T3_Checkout_ProductUnavailableBeforeOrder_OrderBlockedWithErrorMessage
+
+**Test-ID:** TC_110
+
+### Vorbedingungen
+- Ein Produkt befindet sich im Warenkorb.
+
+### Testschritte
+1. Produkt in den Warenkorb legen.
+2. Produkt wird vor Abschluss der Bestellung nicht mehr verfügbar.
+3. Checkout starten oder Bestellung bestätigen.
+
+### Erwartetes Ergebnis
+- Die Bestellung wird blockiert.
+- Eine verständliche Fehlermeldung zeigt, dass das Produkt nicht verfügbar ist.
+
+---
+
+## TC_115 – T4_Checkout_InvalidCreditCardData_PaymentRejected
+
+**Test-ID:** TC_115
+
+### Vorbedingungen
+- Benutzer ist eingeloggt.
+- Warenkorb enthält ein Produkt.
+
+### Testschritte
+1. Checkout starten.
+2. Zahlungsart "Credit Card" auswählen.
+3. Ungültige Kartennummer oder abgelaufenes Ablaufdatum eingeben.
+4. Bestellung bestätigen.
+
+### Erwartetes Ergebnis
+- Zahlung wird abgelehnt.
+- Bestellung wird nicht erstellt.
+- Eine Fehlermeldung zur ungültigen Zahlung wird angezeigt.
+
+---
+
+## TC_118 – T5_Checkout_ManipulateCartTotalInBrowser_ServerPriceUsedForOrder
+
+**Test-ID:** TC_118
+
+### Vorbedingungen
+- Warenkorb enthält ein Produkt.
+- Benutzer hat Zugriff auf Browser Developer Tools.
+
+### Testschritte
+1. Warenkorb öffnen.
+2. Angezeigten Preis oder Gesamtbetrag im Browser manipulieren.
+3. Checkout starten.
+4. Bestellung bestätigen.
+
+### Erwartetes Ergebnis
+- Die Bestellung verwendet den serverseitig berechneten Originalpreis.
+- Manipulierte Frontend-Werte werden ignoriert.
+
+---
+### **Hinweis: Die vollständigen KI-generierten Testfälle wurden zusätzlich in der separaten Datei `ToolShop_GenAI_Testcases(G101- ISTQB-TRATAS)_Guelbin` dokumentiert.**
+---
+
+Bei der Auswahl der Testfälle habe ich mich auf businesskritische und funktional wichtige Szenarien konzentriert, die für den Bestell- und Checkout-Prozess besonders relevant sind.
+Dabei wollte ich sowohl positive als auch negative Testfälle sowie sicherheitsrelevante Aspekte abdecken.
+Zusätzlich habe ich darauf geachtet, möglichst alle Testdesign-Kategorien (T1–T5) mit mindestens einem Testfall zu repräsentieren.
 
 ---
 
@@ -135,21 +264,61 @@ Bewerten Sie die generierten Testfälle:
 - Sind einige Testfälle zu allgemein?
 
 
-**Obwohl die Aufgabe ursprünglich nicht den Vergleich mehrerer KI-Modelle vorsah, habe ich zusätzlich Gemini AI verwendet, um die Ergebnisse zu vergleichen und Unterschiede in der Qualität der generierten Testfälle zu analysieren.**
+Die generierten Testfälle sind insgesamt realistisch und gut auf den ToolShop-Anwendungsfall übertragbar. Besonders positiv ist, dass die Testfälle zu den vorgegebenen Testdesign-Kategorien passen und sowohl normale Abläufe als auch Fehler- und Grenzfälle berücksichtigen.
 
-**Die mit ChatGPT generierten Testfälle wirken realistisch und gut an den ToolShop-Checkout- und Warenkorbprozess angepasst. Die Testschritte sind klar strukturiert und die erwarteten Ergebnisse präzise formuliert.**
+Trotzdem wurden nicht alle möglichen Szenarien abgedeckt. Es könnten noch weitere relevante Testfälle ergänzt werden, zum Beispiel:
+- Checkout als Gastbenutzer
+- Versuch, ein nicht verfügbares Produkt in den Warenkorb zu legen
+- Tests für verschiedene Zahlungsarten
+- Eingabe einer sehr hohen Produktmenge im Warenkorb
+- Validierung bei Änderungen der Produktmenge
 
-**Auch die mit Gemini AI erstellten Testfälle wirken grundsätzlich realistisch. Allerdings sind sie teilweise allgemeiner formuliert und enthalten bei den erwarteten Ergebnissen mehrere mögliche Varianten oder Formulierungen. Dadurch wirken die Testfälle ausführlicher, aber teilweise auch weniger präzise und stärker spekulativ.**
+Einige Testfälle könnten außerdem noch konkreter formuliert werden. Zum Beispiel könnten genaue Testdaten, konkrete Fehlermeldungen oder erwartete Systemzustände nach dem Test ergänzt werden. Insgesamt ist die Qualität der generierten Testfälle aber gut, da sie praxisnah, verständlich und für den ToolShop relevant sind.
 
-**Insgesamt eignen sich beide KI-Systeme gut zur schnellen Erstellung von Testfällen. Die Ergebnisse sollten jedoch immer manuell überprüft und an die tatsächliche Anwendung angepasst werden.**
+Die Testfälle eignen sich grundsätzlich auch als Grundlage für Regressionstests und spätere Testautomatisierung, da die Testschritte und erwarteten Ergebnisse klar beschrieben sind.
 
-
-
+---
 
 Verbessern Sie das Ergebnis:
 - Fügen Sie mindestens 2 fehlende Testfälle hinzu, die von der KI nicht generiert wurden
 
-    **Die generierten Testfälle decken bereits viele wichtige Szenarien des Warenkorb- und Checkout-Prozesses ab. Daher konnten keine gravierenden fehlenden Testfälle identifiziert werden.**
+## TC_201 – T4_Checkout_InvalidCouponCode_ErrorMessageDisplayed
+
+**Test-ID:** TC_201
+
+### Vorbedingungen
+- Benutzer ist eingeloggt.
+- Warenkorb enthält mindestens ein Produkt.
+
+### Testschritte
+1. Checkout starten.
+2. Einen ungültigen Gutscheincode eingeben.
+3. Gutschein anwenden.
+4. Bestellung fortsetzen.
+
+### Erwartetes Ergebnis
+- Der Gutscheincode wird nicht akzeptiert.
+- Eine verständliche Fehlermeldung wird angezeigt.
+- Der Gesamtpreis bleibt unverändert.
+
+---
+
+## TC_202 – T4_Cart_HighProductQuantity_ErrorMessageDisplayed
+
+**Test-ID:** TC_202
+
+### Vorbedingungen
+- Ein Produkt befindet sich im Warenkorb.
+
+### Testschritte
+1. Warenkorb öffnen.
+2. Eine sehr hohe Produktmenge eingeben (z. B. 9999).
+3. Enter drücken oder Eingabefeld verlassen.
+
+### Erwartetes Ergebnis
+- Die eingegebene Menge wird nicht akzeptiert.
+- Eine Validierungsmeldung oder Fehlermeldung wird angezeigt.
+- Das System akzeptiert keine unrealistisch hohe Bestellmenge.
 
 ---
 
